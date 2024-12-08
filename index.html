@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>LET'S START</h1>
+    <button id="srt" onclick="start()"><h3>START</h3></button>
+    <button id="fast" onclick="fast()"><h3>FAST</h3></button>
+    <button id="slow" onclick="slow()"><h3>SLOW</h3></button>
+
+    <audio id="sound" autoplay >
+        <source src="start.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="sun"></div>
+
+<body>
+    <div class="car">
+        <div id="top">
+
+            <div id="left">  
+                 
+            </div>
+
+            <div id="center">
+                <div id="glass1"></div>
+                <div id="glass2"></div>
+
+            </div>
+
+            <div id="right">
+                <div id="light"></div>
+             </div>
+
+        </div>
+        
+        <div id="bottom">
+            <div id="lwheel">
+                <div id="lline"></div>
+            </div>
+            <div id="rwheel">
+                <div id="rline"></div>
+            </div>  
+        </div>
+    
+    </div>
+
+    <div class="road"> </div>
+    <div id="green"></div>
+    <script>
+        var suun=document.getElementById("sun")
+        var line1=document.getElementById("rline")
+        var line2=document.getElementById("lline")
+        var sound=document.getElementById("sound")
+        function start(){
+           suun.style.animation="sunn 30s linear infinite"
+           line1.style.animation="wheel 2s linear infinite";
+           line2.style.animation="wheel 2s linear infinite";
+           sound.play() 
+
+
+    }
+    function fast(){
+        line1.style.animation="wheel 1s linear infinite";
+        line2.style.animation="wheel 1s linear infinite";
+    }
+    function slow(){
+        line1.style.animation="wheel 3s linear infinite";
+        line2.style.animation="wheel 3s linear infinite";
+    }
+    </script>
+         
+</body>
+</html>
