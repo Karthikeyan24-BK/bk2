@@ -341,7 +341,7 @@ h1{
     width:70px;
     border-radius: 50%;
     position: absolute;
-    bottom:62%;
+    bottom:53%;
     left:-40px;
 
     
@@ -353,8 +353,8 @@ h1{
     width:70px;
     border-radius: 50%;
     position: absolute;
-    left:170px;
-    bottom:62%;   
+    left:160px;
+    bottom:53%;   
 }
 #lline{
     background-color: gray;
